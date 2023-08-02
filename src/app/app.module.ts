@@ -9,12 +9,17 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import {DocsComponent} from './docs/docs.component';
 
+import {ParentComponent} from './parent/parent.component';
+import {ChildComponent} from './child/child.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     TopBarComponent,
     ProductListComponent,
-    DocsComponent
+    DocsComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +27,8 @@ import {DocsComponent} from './docs/docs.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       {path: '', component:  ProductListComponent},
-      {path: 'docs', component: DocsComponent}
+      {path: 'docs', component: DocsComponent},
+      {path: 'conn', component: ParentComponent}
     ])
   ],
   providers: [],
