@@ -7,7 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
-
+import {DocsComponent} from './docs/docs.component'
 @NgModule({
   declarations: [
     AppComponent,
