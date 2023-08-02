@@ -7,18 +7,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
-import {DocsComponent} from './docs/docs.component'
+import {DocsComponent} from './docs/docs.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     TopBarComponent,
-    ProductListComponent
+    ProductListComponent,
+    DocsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    RouterModule.forRoot([{path: '', component:  ProductListComponent}])
+    RouterModule.forRoot([
+      {path: '', component:  ProductListComponent},
+      {path: 'docs', component: DocsComponent}
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
